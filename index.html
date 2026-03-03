@@ -66,11 +66,22 @@
     .red-btn.whatsapp  { background-color: #aaa; pointer-events: none; }
     .red-btn svg { width: 28px; height: 28px; fill: white; flex-shrink: 0; }
 
-    @media (max-width: 480px) {
-      .banner { flex-direction: column; align-items: flex-start; gap: 10px; }
-      .banner-derecha { align-items: flex-start; }
-      .banner img { height: 45px; }
+    @media (max-width: 480px){
+    .banner {
+      padding: 10px 14px;
     }
+    .banner img {
+      height: 40px;
+    }
+    .banner nav a {
+      margin-left: 10px;
+      font-size: 0.75rem;
+    }
+    .iconos-redes a svg {
+      width: 18px;
+      height: 18px;
+    }
+  }
   </style>
 </head>
 <body>
