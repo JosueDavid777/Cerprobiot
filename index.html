@@ -1,1 +1,101 @@
-<h1>Pagina Oficial test Cerprobiot</h1>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cerprobiot</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    .banner {
+      width: 100%;
+      background-color: #2e7d32;
+      padding: 14px 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .banner img {
+      height: 60px;
+      width: auto;
+      display: block;
+      object-fit: contain;
+    }
+
+    .banner nav a {
+      color: #a5d6a7;
+      text-decoration: none;
+      margin-left: 20px;
+      font-family: sans-serif;
+      font-size: clamp(0.8rem, 2.5vw, 1rem);
+      transition: color 0.2s;
+    }
+
+    .banner nav a:hover {
+      color: #ffffff;
+    }
+
+    .contenido {
+      padding: 40px 24px;
+      font-family: sans-serif;
+      color: #333;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .contenido h2 {
+      margin-bottom: 12px;
+      color: #2e7d32;
+    }
+
+    .contenido p {
+      line-height: 1.7;
+      color: #555;
+    }
+
+    @media (max-width: 480px) {
+      .banner {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+      }
+
+      .banner img {
+        height: 45px;
+      }
+
+      .banner nav a:first-child {
+        margin-left: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="banner">
+    <img 
+      src="https://github.com/JosueDavid777/Cerprobiot/blob/main/logo.png" 
+      alt="Logo Cerprobiot"
+    >
+    <nav>
+      <a href="#">Inicio</a>
+      <a href="#">Nosotros</a>
+      <a href="#">Contacto</a>
+    </nav>
+  </header>
+
+  <main class="contenido">
+    <h2>Bienvenido</h2>
+    <p>
+      Contenido principal de la página.
+    </p>
+  </main>
+
+</body>
+</html>
+
